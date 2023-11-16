@@ -1,0 +1,296 @@
+ 
+ 
+ .Hero {
+    width: 100%;
+    height: 612px;
+    display: flex;
+    align-items: left;
+  
+  
+    }
+  
+  
+    
+      .Hero-Wrapper{
+        width: 100%;
+        height: 612px;
+        flex-shrink: 0;
+        color:#FFF;
+        background-image: url('Group 15.jpg'); /* Replace with your background image URL */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }   
+    
+       .title {
+        margin-left:162px;
+        Padding-top:80px;
+        color: #FFF;
+        text-align: justify;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1px;
+        
+      }
+    .typed-text-container{
+     
+      padding-top:80px;
+    }
+
+    .subtitle  {
+        margin-top:20px;
+        margin-left:162px;
+        color: rgba(255, 255, 255, 0.80);
+        text-align: justify;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+    
+     
+    .process{
+      color:#EDA409;
+      text-align: justify;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700; 
+    }
+
+
+
+      .another-title{
+        height:40px;
+        margin-top:30px;
+        margin-left:162px;
+      }
+        
+       
+        .image-container {
+          position: absolute;
+          top: 60%; /* Adjust the top position as needed */
+          left: 60%; /* Align to the left */
+          transform: translateY(-50%); /* Vertically center the image */
+        }
+        
+        .atm-image {
+          width: 100%; /* Adjust the width as needed */
+          height: auto;
+        }
+
+        .Open{
+          width: 250px;
+          height: 70px;
+          color: #FFF;
+          font-family: Roboto;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          border-radius: 8px;
+          background: #EDA409;
+          margin-left: 162px;
+          margin-top: 20px;
+        }
+
+
+        .Open:hover{
+          background-color:#1c1c1b;
+        }
+  
+  
+
+
+ 
+      
+
+/* Styles for screens with width between 320px and 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .typed-text-container{
+    padding-top:50px;
+    width:500px;
+  }
+
+
+.title{
+  margin-left:30px;
+  Padding-top:100px;
+  font-size: 24px;
+}
+
+.subtitle  {
+  margin-top:3px;
+  margin-left:30px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.another-title{
+
+  margin-top:30px;
+  margin-left:30px;
+ 
+  
+}
+.process{
+  font-size: 25px;
+}
+
+.Open{
+  width: 200px;
+  height: 45px;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 15px;
+  
+}
+
+.image-container {
+  display:none;
+}
+
+}
+
+
+/* Styles for screens with width between 481px and 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+
+  .Hero {
+   
+    display:flex;
+    align-items:left
+    } 
+    
+    .typed-text-container{
+    padding-top:50px;
+    width:600px;
+  }
+
+
+.title{
+  margin-left:30px;
+  Padding-top:150px;
+  font-size: 30px;
+}
+
+.subtitle  {
+  margin-top:10px;
+  margin-left:30px;
+  line-height: 30px;
+}
+
+.another-title{
+
+  margin-top:30px;
+  margin-left:30px;
+  
+}
+.process{
+  font-size: 30px;
+}
+
+.image-container {
+  display:none;
+}
+
+.Open{
+  width: 250px;
+  height: 45px;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+}
+
+
+/* Styles for screens with width between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  .typed-text-container{
+    padding-top:50px;
+    width:600px;
+  }
+
+.title{
+  margin-left:80px;
+  Padding-top:150px;
+  font-size: 30px;
+  
+}
+
+.subtitle  {
+  margin-top:10px;
+  margin-left:80px;
+  line-height: 30px;
+}
+
+.another-title{
+  margin-top:30px;
+  margin-left:30px;
+}
+
+
+.process{
+  font-size: 30px;
+  margin-left:50px;
+}
+
+
+.image-container {
+  display:block;
+}
+
+
+.atm-image {
+  margin-top:180px;
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+}
+.Open{
+  width: 250px;
+  height: 45px;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+}
+
+
+
+
+
+
+/* Styles for screens with width between 1025px and 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+  .atm-image {
+    margin-top:200px;
+    width: 100%; 
+    margin-left:-20px;/* Adjust the width as needed */
+    height: auto;
+  }}
+
+
+  /* Styles for screens with width of 1201 and above */
+@media screen and (min-width: 1201px) {
+  .image-container {
+    display:block;
+  }
+  
+  
+  .atm-image {
+    margin-top:200px;
+    width: 100%; 
+    margin-left:-20px;/* Adjust the width as needed */
+    height: auto;
+
+
+}}

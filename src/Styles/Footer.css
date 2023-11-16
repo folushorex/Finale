@@ -1,0 +1,176 @@
+/* Footer.css */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row */
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    flex-direction: column; /* Ensure a column layout for the children */
+  }
+  
+  .columns {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row */
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  .column {
+    flex: 1;
+    max-width: 200px;
+    margin: 0 30px;
+    text-align: center;
+    border-right: 1px solid gold; /* Add the right border */
+    padding-right: 10px; /* Add padding to the right to separate the border from text */
+    margin-bottom: 20px;
+  }
+  
+  .column:last-child {
+    border-right: none;
+  }
+
+
+  .column h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    
+  }
+  
+  .column p {
+    margin: 5px;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 30px;
+   
+  }
+  
+  .column a {
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+
+        }
+  
+
+      .column .just:hover{
+      
+        text-decoration: underline;
+        text-decoration-color: #fdbb13;
+        text-decoration-thickness: 2px;
+       
+          }
+
+  .socials {
+    
+    margin-top:10px;
+    width:450px;
+    margin-left:-130px;
+  }
+
+  .socials img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    
+  }
+  
+
+  
+  /* Style for the trademark */
+  .trademark {
+    text-align: center;
+    font-size: 14px;
+    color: gold;
+    font-weight: bold;
+    margin-top: 20px;
+    border-top: none;
+  }
+  
+
+   /*styles for screens that are 900 pixels wide or less*/
+ @media only screen and (max-width: 900px) {}
+
+/* Styles for screens with width between 320px and 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .column {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+    border-bottom: 1px solid gold; /* Add the right border */
+    border-right:none;
+   border-bottom-left-radius: 10%;
+   border-bottom-right-radius: 10%;
+    margin-bottom: 20px;
+  }
+
+  .column h2{
+    text-align:center;
+  }
+  
+
+ .column p {
+  width:150px;
+line-height: 30px;
+ margin-left:30px;
+}
+
+  
+.trademark{
+  margin-right:-15px;
+  padding-top:10px;
+
+}
+
+
+
+
+}
+
+
+/* Styles for screens with width between 320px and 480px */
+@media screen and (min-width: 481px) and (max-width: 600px) {
+
+
+  .column {
+    flex: 1;
+    margin: 0 150px;
+    text-align: center;
+    border-bottom: 1px solid gold; /* Add the right border */
+    border-right:none;
+   border-bottom-left-radius: 10%;
+   border-bottom-right-radius: 10%;
+    margin-bottom: 20px;
+  }
+
+
+
+  .column h2{
+    text-align:center;
+  }
+  
+
+ .column p {
+  width:150px;
+line-height: 30px;
+ margin-left:30px;
+}
+
+  
+.trademark{
+  margin-right:-15px;
+  padding-top:10px;
+
+}}

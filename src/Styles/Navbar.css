@@ -1,0 +1,454 @@
+
+
+
+
+.navbar-container {
+  display: flex;
+  flex-direction:row;
+    width: 100%;
+    height: 100px;
+    background-color:#ffff;
+   
+  
+  }
+  
+ .navbar-container .left{
+  
+    width: 60%;
+    height: 100px;
+    display: flex;
+    gap:40px;
+    align-items: center;
+  
+  }
+  
+  .logo img{
+    width: 100%;
+    height:150px;
+margin-top:40px;
+margin-left:150px;
+  }
+
+.middle{
+
+margin-left:150px;
+
+  }
+
+  ul.menu-one{
+    display: flex;
+    width: 329px;
+    height: 19px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  
+    
+  }
+
+  ul.menu-one, ul.menu-two {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul.menu-one li, ul.menu-two li {
+    display: inline; /* Display the <li> elements inline */
+    margin-right: 0px; /* Add some spacing between the <li> elements (adjust as needed) */
+  }
+
+
+  a{
+    text-decoration: none;
+    color: #230adf;
+    transition: background-image 0.3s; /* Add a smooth transition for background-image changes */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  text-decoration: none;
+  }
+ 
+ 
+  a:hover{
+    text-decoration:underline;
+    text-decoration-color: #fdbb13;
+    text-decoration-thickness: 2px;
+    color:#230adf;
+    
+  }
+ 
+  
+  .middle ul  .menu-one{
+   display: inline-block;
+  }
+  
+/* Add this to your Navbar.css file */
+
+.menu-two {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap:40px;
+  display: flex; /* Use flexbox to align the Login and Signup items side by side */
+  
+}
+
+.menu-two li {
+  margin-right: 10px; /* Add spacing between the Login and Signup items */
+}
+
+/* You can adjust the margin-right value to control the spacing */
+.menu-two .login {
+margin-top: 25px;
+color: #230adf;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+.menu-two .Signup {
+  margin-top: 10px;
+  
+  }
+  
+.login, .Signup {
+  text-decoration:none; /* Remove underlines for the links */
+  color:#230adf; /* Set the text color */
+
+}
+.Signup{
+  color: #230adf;
+  font-family: Roboto;
+    cursor: pointer;
+    justify-content: center;
+    width: 128px;
+    height: 54px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 750;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #FFFF;
+}
+
+.Signup:hover {
+  background-color: #fdbb13;
+
+}
+
+  .navbar-container .right-nav {
+    flex: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: inline;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: flex-end;
+
+
+  
+  }
+  
+
+  
+/* Existing styles for your Navbar */
+/* ... (Your existing styles) ... */
+
+/* Styles for the Company dropdown menu */
+.dropdown {
+position: relative;
+}
+
+
+
+.dropdown-menu {
+position: absolute;
+background-color: #ffffff; /* Background color of the dropdown */
+list-style: none;
+padding: 0;
+position: absolute;
+z-index: 1000;
+display: none;
+min-width: 10rem;
+margin: 0;
+background-clip: padding-box;
+border: 1px solid rgba(0, 0, 0, 0.15);
+border-radius: 0.25rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* Ensure individual dropdown items are styled properly */
+.dropdown-menu li {
+
+  cursor: pointer;
+  padding: 10px 15px; /* Add padding for spacing within each item */
+  white-space: nowrap;
+  transition: background-color 0.3s; /* Add a smooth background color transition */
+}
+
+/* Show dropdown menu when the parent li is clicked */
+.dropdown.open .dropdown-menu {
+display: block; /* Display the menu as a block (vertical) */
+}
+
+  .company {
+    cursor: pointer;
+    text-decoration: none;
+    color: #230adf;
+    transition: background-image 0.3s; /* Add a smooth transition for background-image changes */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  text-decoration: none;
+  }
+
+  .reorder-icon {
+    display: none; /* Hide by default */
+  }
+
+  /* Mobile Menu Overlay */
+  .mobile-menu-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000; /* Place the overlay above other content */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+
+
+
+
+/* Close button */
+.close-icon {
+  
+  display: none; /* Hide by default */
+
+
+}
+
+
+
+/* Mobile Menu Icons */
+.mobile-menu-icons {
+  display: flex;
+  align-items: center;
+}
+
+
+.mobile-menu-overlay.show {
+  display: flex; /* Show the overlay when 'show' class is applied */
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Overlay Menu */
+.overlay-menu {
+ 
+  list-style: none;
+  margin: 0;
+
+
+}
+
+/* Close button for the overlay menu */
+.close-overlay-button {
+  position: absolute;
+  top: 30px;
+  top: 30px;
+  right:70px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+  /*applied when the screen width is 768 pixels or less*/
+  @media only screen and (max-width: 768px) {
+    /* Reorder button */
+.reorder-icon {
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+right:70px;
+  cursor: pointer;
+  display: block; /* Hide by default */
+ 
+  
+}
+
+/* Close button */
+.close-icon {
+  display:none; /* Hide by default */
+ 
+}
+
+
+    .logo img {
+ width:50%;
+ height:120px;
+ margin-left:30px;
+  display: block;
+}
+
+/* Hide all other menu items by default */
+.menu-one,
+.middle,
+.right-nav,
+.menu-two {
+  display: none;
+}
+
+
+.mobile-menu-item {
+height:100%;
+width:100%;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  vertical-align:25px;
+  justify-content: center;
+}
+
+}
+
+
+
+
+
+
+  
+
+/* Styles for screens with width between 769px and 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+   
+      
+  .navbar-container .left{
+   
+     width: 60%;
+     height: 100px;
+     display: flex;
+     gap:20px;
+ 
+   }
+   
+   .logo img{
+     width: 100%;
+     height:150px;
+ margin-top:35px;
+ margin-left:70px;
+   }
+ 
+ .middle{
+ 
+ margin-left:100px;
+
+   }
+ 
+   ul.menu-one{
+     display: flex;
+     width: 250px;
+     height: 19px;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+   }
+  
+
+   
+ /* Add this to your Navbar.css file */
+ 
+ .menu-two {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   gap:10px;
+   display: flex; /* Use flexbox to align the Login and Signup items side by side */
+ 
+ }
+ 
+ .menu-two .Signup {
+   margin-top: 10px;
+   }
+   
+ 
+   .navbar-container .right-nav {
+     flex: 50%;
+     height: 100px;
+     margin-right: 60px;
+   }
+   
+ 
+   
+ /* Existing styles for your Navbar */
+ /* ... (Your existing styles) ... */
+ 
+ /* Styles for the Company dropdown menu */
+ .dropdown {
+ position: relative;
+ }
+ 
+ 
+ 
+ .dropdown-menu {
+ position: absolute;
+ background-color: #ffffff; /* Background color of the dropdown */
+ list-style: none;
+ padding: 0;
+ position: absolute;
+ z-index: 1000;
+ display: none;
+ min-width: 10rem;
+ margin: 0;
+ background-clip: padding-box;
+ border: 1px solid rgba(0, 0, 0, 0.15);
+ border-radius: 0.25rem;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+ }
+ 
+ /* Ensure individual dropdown items are styled properly */
+ .dropdown-menu li {
+ 
+   cursor: pointer;
+   padding: 10px 15px; /* Add padding for spacing within each item */
+   white-space: nowrap;
+   transition: background-color 0.3s; /* Add a smooth background color transition */
+ }
+ 
+ /* Show dropdown menu when the parent li is clicked */
+ .dropdown.open .dropdown-menu {
+ display: block; /* Display the menu as a block (vertical) */
+ }
+ 
+   .company {
+     cursor: pointer;
+     text-decoration: none;
+     color: #230adf;
+     transition: background-image 0.3s; /* Add a smooth transition for background-image changes */
+     font-family: Inter;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+   text-decoration: none;
+   }
+ 
+  
+}

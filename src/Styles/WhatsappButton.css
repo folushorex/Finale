@@ -1,0 +1,75 @@
+.whatsapp-button {
+    position: fixed;
+    width:200px;
+    height:300px;
+    bottom: -150px;
+    right: -23px;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 999;
+  }
+  
+
+
+  
+  /* Define the blink animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the image on hover */
+.whatsapp-button:hover {
+  animation: blink 1s infinite;
+}
+
+
+
+ /*applied when the screen width is 600 pixels or less*/
+ @media only screen and (max-width: 600px){
+ 
+  .whatsapp-button {
+ position: fixed;
+ width:200px;
+ height:200px;
+ bottom: -90px;
+ right: -45px;
+ padding: 5px 40px;
+ text-align: center;
+ z-index: 999;
+}
+ }
+
+/* Styles for screens with width between 320px and 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .whatsapp-button {
+  position: fixed;
+  width:150px;
+  height:200px;
+  bottom: -90px;
+  right: -15px;
+  padding: 5px 40px;
+ 
+ }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 471px) {
+  .whatsapp-button {
+  position: fixed;
+  width:150px;
+  height:200px;
+  bottom: -90px;
+  right: 100px;
+  padding: 5px 40px;
+ 
+ }
+}

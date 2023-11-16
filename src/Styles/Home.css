@@ -1,0 +1,9 @@
+/* Define styles for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+  
+    /* Remove animations for screens with a maximum width of 600px */
+    .Home .animation-element {
+      animation: none !important;
+    }
+  }
+  
